@@ -1,0 +1,26 @@
+{
+  "name": " ",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "keywords": [
+    ""
+  ],
+  "license": "",
+  "author": "",
+  "scripts": {
+    "sass": "sass scss/main.scss css/style.css",
+    "sass:watch": "sass --watch scss/main.scss css/style.css",
+    "dev": "npm run sass:watch",
+    "build": "sass scss/main.scss css/style.css --style=compressed --no-source-map"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "sass": "^1.97.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2",
+    "webpack-merge": "^5.10.0"
+  }
+}

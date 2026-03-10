@@ -1,0 +1,35 @@
+// ======================
+// ABSTRACTS (no output)
+// ======================
+// Variables and mixins are loaded via @use in each file
+
+// ======================
+// BASE
+// ======================
+@use 'base/reset';
+@use 'base/typography';
+
+// ======================
+// LAYOUT
+// ======================
+@use 'layout/container';
+@use 'layout/header';
+@use 'layout/footer';
+
+// ======================
+// COMPONENTS
+// ======================
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/forms';
+
+// ======================
+// PAGES
+// ======================
+@use 'pages/home';
+@use 'pages/about';
+@use 'pages/courses';
+@use 'pages/contact';
+@use 'pages/auth';
+@use 'pages/legal';
+@use 'pages/404' as error-page;

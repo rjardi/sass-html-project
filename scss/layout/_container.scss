@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.container {
+  width: 100%;
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+
+  @include tablet {
+    padding: 0 $spacing-xl;
+  }
+
+  @include desktop {
+    padding: 0 $spacing-2xl;
+  }
+}
+
+main {
+  padding: $spacing-xl $spacing-md;
+
+  @include tablet {
+    padding: $spacing-2xl $spacing-xl;
+  }
+
+  @include desktop {
+    max-width: $container-max;
+    margin: 0 auto;
+    padding: $spacing-3xl $spacing-2xl;
+  }
+}

@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+h1 {
+  @include heading-xl;
+  margin-bottom: $spacing-lg;
+}
+
+h2 {
+  @include heading-lg;
+  margin-bottom: $spacing-md;
+}
+
+h3 {
+  @include heading-md;
+  margin-bottom: $spacing-sm;
+}
+
+p {
+  margin-bottom: $spacing-md;
+  line-height: $lh-relaxed;
+}
+
+strong {
+  font-weight: $fw-semibold;
+}

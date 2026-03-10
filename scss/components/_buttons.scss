@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  display: inline-block;
+  padding: $spacing-sm $spacing-xl;
+  font-size: $fs-body;
+  font-weight: $fw-semibold;
+  color: $color-text-inverse;
+  background-color: $color-primary;
+  border: 2px solid $color-primary;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: background-color $transition-base, color $transition-base, transform $transition-fast;
+
+  &:hover {
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+input[type="reset"] {
+  background-color: transparent;
+  color: $color-text-light;
+  border-color: $color-border;
+
+  &:hover {
+    background-color: $color-bg-alt;
+    color: $color-text;
+    border-color: $color-text-light;
+  }
+}
+
+// Link styled as button
+.btn-link {
+  display: inline-block;
+  padding: $spacing-sm $spacing-lg;
+  background-color: $color-primary;
+  color: $color-text-inverse;
+  font-weight: $fw-semibold;
+  border-radius: $border-radius;
+  transition: background-color $transition-base, transform $transition-fast;
+
+  &:hover {
+    background-color: $color-primary-light;
+    color: $color-text-inverse;
+    transform: translateY(-1px);
+  }
+}

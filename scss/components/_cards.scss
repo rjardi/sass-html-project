@@ -1,0 +1,51 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+article {
+  background-color: $color-bg;
+  border: 1px solid $color-border;
+  border-radius: $border-radius-lg;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-lg;
+  transition: box-shadow $transition-base, transform $transition-base;
+
+  @include tablet {
+    padding: $spacing-xl;
+  }
+
+  &:hover {
+    box-shadow: $shadow-md;
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    color: $color-primary-dark;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  img {
+    border-radius: $border-radius;
+    margin-bottom: $spacing-md;
+  }
+
+  a {
+    font-weight: $fw-semibold;
+    color: $color-primary;
+
+    &:hover {
+      color: $color-primary-light;
+      text-decoration: underline;
+    }
+  }
+}

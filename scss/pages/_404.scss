@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Override inline styles from 404.html
+.error-page {
+  @include flex-center;
+  flex-direction: column;
+  min-height: 60vh;
+  text-align: center;
+  padding: $spacing-3xl $spacing-md;
+
+  h1 {
+    font-size: $fs-4xl;
+    color: $color-primary;
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    color: $color-text-light;
+    font-size: $fs-lg;
+  }
+
+  a {
+    margin-top: $spacing-xl;
+    display: inline-block;
+    padding: $spacing-sm $spacing-xl;
+    background-color: $color-primary;
+    color: $color-text-inverse;
+    border-radius: $border-radius;
+    font-weight: $fw-semibold;
+    transition: background-color $transition-base;
+
+    &:hover {
+      background-color: $color-primary-light;
+      color: $color-text-inverse;
+    }
+  }
+}

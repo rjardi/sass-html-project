@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Aviso legal page
+main > section {
+  border-top: none;
+  padding-top: 0;
+  margin-top: $spacing-xl;
+  display: block;
+
+  h2 {
+    text-align: left;
+    font-size: $fs-xl;
+    color: $color-primary-dark;
+    padding-bottom: $spacing-sm;
+    border-bottom: 2px solid $color-primary;
+    display: inline-block;
+  }
+
+  p {
+    text-align: left;
+    color: $color-text;
+  }
+}

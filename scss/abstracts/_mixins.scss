@@ -1,0 +1,83 @@
+@use 'variables' as *;
+
+// ======================
+// RESPONSIVE BREAKPOINTS
+// ======================
+@mixin tablet {
+  @media (min-width: $bp-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@mixin wide {
+  @media (min-width: $bp-wide) {
+    @content;
+  }
+}
+
+// ======================
+// TYPOGRAPHY
+// ======================
+@mixin heading-xl {
+  font-size: $fs-2xl;
+  font-weight: $fw-bold;
+  line-height: $lh-tight;
+
+  @include tablet {
+    font-size: $fs-3xl;
+  }
+
+  @include desktop {
+    font-size: $fs-4xl;
+  }
+}
+
+@mixin heading-lg {
+  font-size: $fs-xl;
+  font-weight: $fw-bold;
+  line-height: $lh-tight;
+
+  @include tablet {
+    font-size: $fs-2xl;
+  }
+}
+
+@mixin heading-md {
+  font-size: $fs-lg;
+  font-weight: $fw-semibold;
+  line-height: $lh-tight;
+
+  @include tablet {
+    font-size: $fs-xl;
+  }
+}
+
+@mixin body-text {
+  font-size: $fs-body;
+  line-height: $lh-normal;
+
+  @include tablet {
+    font-size: $fs-md;
+  }
+}
+
+// ======================
+// LAYOUT
+// ======================
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

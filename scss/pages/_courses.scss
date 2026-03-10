@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Course detail pages
+main > article {
+  border: none;
+  padding: 0;
+
+  &:hover {
+    box-shadow: none;
+    transform: none;
+  }
+
+  figure {
+    margin: $spacing-xl 0;
+
+    img {
+      border-radius: $border-radius-lg;
+      box-shadow: $shadow-md;
+    }
+  }
+}

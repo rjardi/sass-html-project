@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Login & Registration pages - center the form
+main:has(form) {
+  > h1 {
+    text-align: center;
+  }
+
+  > p {
+    text-align: center;
+    color: $color-text-light;
+  }
+
+  form {
+    margin: $spacing-xl auto 0;
+    background-color: $color-bg-alt;
+    padding: $spacing-xl;
+    border-radius: $border-radius-lg;
+    border: 1px solid $color-border;
+
+    @include tablet {
+      padding: $spacing-2xl;
+    }
+  }
+}

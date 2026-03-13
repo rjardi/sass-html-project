@@ -5,9 +5,6 @@ node_modules
 dist
 .cache
 
-# Compiled CSS (generated from SASS)
-css/
-
 # SASS source maps
 *.css.map
 
